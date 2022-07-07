@@ -44,7 +44,18 @@
 (ui_signal_parameter
   (identifier) @variable.parameter)
 
+;;; ui_object_definition
+(ui_object_definition
+  type_name: (identifier) @type)
+
+
+;;; function
+
+(function_declaration
+  name: (identifier) @type)
+
 ;;; Keywords
+(comment) @comment
 
 [
   "as"
@@ -57,4 +68,7 @@
   "readonly"
   "required"
   "signal"
+  "function"
+  "var"
+  "if"
 ] @keyword
