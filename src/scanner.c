@@ -1,4 +1,4 @@
-#include <tree_sitter/parser.h>
+#include "tree_sitter/parser.h"
 #include "typescript-scanner.h"
 
 void *tree_sitter_qmljs_external_scanner_create() { return NULL; }
