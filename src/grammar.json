@@ -1,4 +1,14 @@
 {
+  "0": "t",
+  "1": "y",
+  "2": "p",
+  "3": "e",
+  "4": "s",
+  "5": "c",
+  "6": "r",
+  "7": "i",
+  "8": "p",
+  "9": "t",
   "name": "qmljs",
   "word": "identifier",
   "rules": {
@@ -6808,6 +6818,18 @@
           "value": "static"
         },
         {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "_automatic_semicolon"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        },
+        {
           "type": "FIELD",
           "name": "body",
           "content": {
@@ -12425,6 +12447,10 @@
       "_initializer"
     ],
     [
+      "class_static_block",
+      "_property_name"
+    ],
+    [
       "call_expression",
       "instantiation_expression",
       "binary_expression"
@@ -13203,7 +13229,6 @@
     }
   ],
   "inline": [
-    "statement",
     "_expressions",
     "_semicolon",
     "_identifier",
