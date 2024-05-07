@@ -25,7 +25,7 @@
     "nan": "^2.15.0"
   },
   "devDependencies": {
-    "tree-sitter-cli": "^0.21.0",
+    "tree-sitter-cli": "^0.22.6",
     "tree-sitter-javascript": "^0.21.2",
     "tree-sitter-typescript": "^0.21.1"
   },
