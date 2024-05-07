@@ -6,7 +6,7 @@
 //! ```
 //! let code = "";
 //! let mut parser = tree_sitter::Parser::new();
-//! parser.set_language(tree_sitter_qmljs::language()).expect("Error loading QML grammar");
+//! parser.set_language(&tree_sitter_qmljs::language()).expect("Error loading QML grammar");
 //! let tree = parser.parse(code, None).unwrap();
 //! ```
 //!
@@ -36,9 +36,9 @@ pub const NODE_TYPES: &'static str = include_str!("../../src/node-types.json");
 // Uncomment these to include any queries that this grammar contains
 
 pub const HIGHLIGHTS_QUERY: &'static str = concat!(
-    include_str!("../../queries/highlights.scm"),
-    include_str!("../../queries/highlights-typescript.scm"),
     include_str!("../../queries/highlights-javascript.scm"),
+    include_str!("../../queries/highlights-typescript.scm"),
+    include_str!("../../queries/highlights.scm"),
 );
 // pub const INJECTIONS_QUERY: &'static str = include_str!("../../queries/injections.scm");
 pub const LOCALS_QUERY: &'static str = include_str!("../../queries/locals.scm");
@@ -50,7 +50,7 @@ mod tests {
     fn test_can_load_grammar() {
         let mut parser = tree_sitter::Parser::new();
         parser
-            .set_language(super::language())
+            .set_language(&super::language())
             .expect("Error loading QML language");
     }
 }
