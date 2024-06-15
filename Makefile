@@ -12,15 +12,8 @@ help:
 
 .PHONY: generate
 generate:
-	$(MAKE) queries/highlights-javascript.scm queries/highlights-typescript.scm
 	$(MAKE) src/typescript-scanner.h
 	$(TREE_SITTER) generate
-
-# create symlinks out of sub packages so cargo can pick them up
-queries/highlights-javascript.scm: node_modules/tree-sitter-javascript/queries/highlights.scm
-	ln -sf ../$< $@
-queries/highlights-typescript.scm: node_modules/tree-sitter-typescript/queries/highlights.scm
-	ln -sf ../$< $@
 
 src/typescript-scanner.h: \
  node_modules/tree-sitter-typescript/common/scanner.h \
@@ -41,8 +34,6 @@ src/typescript-scanner.h: \
 clean:
 	$(RM) -R build target
 	$(RM) \
-		queries/highlights-javascript.scm \
-		queries/highlights-typescript.scm \
 		src/grammar.json \
 		src/node-types.json \
 		src/parser.c \
