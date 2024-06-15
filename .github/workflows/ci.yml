@@ -12,10 +12,10 @@ jobs:
     strategy:
       fail-fast: true
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v2
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
       with:
-        node-version: '14'
+        node-version: '20'
     - name: Install dependencies (gyp would fail)
       run: npm install || true
     - name: Generate parser sources
