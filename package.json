@@ -46,8 +46,8 @@
   },
   "devDependencies": {
     "tree-sitter-cli": "^0.22.6",
-    "tree-sitter-javascript": "^0.21.2",
-    "tree-sitter-typescript": "^0.21.1",
+    "tree-sitter-javascript": "^0.21.4",
+    "tree-sitter-typescript": "^0.21.2",
     "prebuildify": "^6.0.0"
   },
   "tree-sitter": [
