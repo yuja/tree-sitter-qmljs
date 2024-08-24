@@ -26,6 +26,7 @@ qtdeclarative/tests/auto/qml/qquickfolderlistmodel/data/dummy.qml
 qtdeclarative/tests/auto/qmlls/modules/data/completions/defaultBindingAfterDot.qml
 qtdeclarative/tests/auto/qmlls/utils/data/completions/afterDots.qml
 qtdeclarative/tests/auto/qmlls/utils/data/completions/attachedPropertyMissingRHS.qml
+qtdeclarative/tests/auto/qmlls/utils/data/completions/attachedPropertyQTBUG127586.qml
 qtdeclarative/tests/auto/qmlls/utils/data/completions/groupedPropertyMissingRHS.qml
 qtdeclarative/tests/auto/qmlls/utils/data/completions/imports.qml
 qtdeclarative/tests/auto/qmlls/utils/data/completions/missingRHS.parserfail.qml
