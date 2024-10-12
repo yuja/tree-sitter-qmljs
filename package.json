@@ -49,27 +49,5 @@
     "tree-sitter-javascript": "^0.23.0",
     "tree-sitter-typescript": "^0.23.0",
     "prebuildify": "^6.0.1"
-  },
-  "tree-sitter": [
-    {
-      "scope": "source.qml",
-      "file-types": [
-        "qml"
-      ],
-      "highlights": [
-        "node_modules/tree-sitter-javascript/queries/highlights.scm",
-        "node_modules/tree-sitter-typescript/queries/highlights.scm",
-        "queries/highlights.scm"
-      ],
-      "locals": [
-        "queries/locals.scm",
-        "node_modules/tree-sitter-typescript/queries/locals.scm",
-        "node_modules/tree-sitter-javascript/queries/locals.scm"
-      ],
-      "tags": [
-        "node_modules/tree-sitter-typescript/queries/tags.scm",
-        "node_modules/tree-sitter-javascript/queries/tags.scm"
-      ]
-    }
-  ]
+  }
 }
