@@ -3316,256 +3316,6 @@
     }
   },
   {
-    "type": "jsx_attribute",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "jsx_element",
-          "named": true
-        },
-        {
-          "type": "jsx_expression",
-          "named": true
-        },
-        {
-          "type": "jsx_namespace_name",
-          "named": true
-        },
-        {
-          "type": "jsx_self_closing_element",
-          "named": true
-        },
-        {
-          "type": "property_identifier",
-          "named": true
-        },
-        {
-          "type": "string",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "jsx_closing_element",
-    "named": true,
-    "fields": {
-      "name": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "identifier",
-            "named": true
-          },
-          {
-            "type": "jsx_namespace_name",
-            "named": true
-          },
-          {
-            "type": "member_expression",
-            "named": true
-          }
-        ]
-      }
-    }
-  },
-  {
-    "type": "jsx_element",
-    "named": true,
-    "fields": {
-      "close_tag": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "jsx_closing_element",
-            "named": true
-          }
-        ]
-      },
-      "open_tag": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "jsx_opening_element",
-            "named": true
-          }
-        ]
-      }
-    },
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "html_character_reference",
-          "named": true
-        },
-        {
-          "type": "jsx_element",
-          "named": true
-        },
-        {
-          "type": "jsx_expression",
-          "named": true
-        },
-        {
-          "type": "jsx_self_closing_element",
-          "named": true
-        },
-        {
-          "type": "jsx_text",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "jsx_expression",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": false,
-      "types": [
-        {
-          "type": "expression",
-          "named": true
-        },
-        {
-          "type": "sequence_expression",
-          "named": true
-        },
-        {
-          "type": "spread_element",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "jsx_namespace_name",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "identifier",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "jsx_opening_element",
-    "named": true,
-    "fields": {
-      "attribute": {
-        "multiple": true,
-        "required": false,
-        "types": [
-          {
-            "type": "jsx_attribute",
-            "named": true
-          },
-          {
-            "type": "jsx_expression",
-            "named": true
-          }
-        ]
-      },
-      "name": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "identifier",
-            "named": true
-          },
-          {
-            "type": "jsx_namespace_name",
-            "named": true
-          },
-          {
-            "type": "member_expression",
-            "named": true
-          }
-        ]
-      },
-      "type_arguments": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "type_arguments",
-            "named": true
-          }
-        ]
-      }
-    }
-  },
-  {
-    "type": "jsx_self_closing_element",
-    "named": true,
-    "fields": {
-      "attribute": {
-        "multiple": true,
-        "required": false,
-        "types": [
-          {
-            "type": "jsx_attribute",
-            "named": true
-          },
-          {
-            "type": "jsx_expression",
-            "named": true
-          }
-        ]
-      },
-      "name": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "identifier",
-            "named": true
-          },
-          {
-            "type": "jsx_namespace_name",
-            "named": true
-          },
-          {
-            "type": "member_expression",
-            "named": true
-          }
-        ]
-      },
-      "type_arguments": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "type_arguments",
-            "named": true
-          }
-        ]
-      }
-    }
-  },
-  {
-    "type": "jsx_text",
-    "named": true,
-    "fields": {}
-  },
-  {
     "type": "labeled_statement",
     "named": true,
     "fields": {
@@ -4539,6 +4289,7 @@
   {
     "type": "program",
     "named": true,
+    "root": true,
     "fields": {
       "root": {
         "multiple": false,
@@ -4972,10 +4723,6 @@
       "types": [
         {
           "type": "escape_sequence",
-          "named": true
-        },
-        {
-          "type": "html_character_reference",
           "named": true
         },
         {
@@ -6427,10 +6174,6 @@
     "named": false
   },
   {
-    "type": "/>",
-    "named": false
-  },
-  {
     "type": ":",
     "named": false
   },
@@ -6440,10 +6183,6 @@
   },
   {
     "type": "<",
-    "named": false
-  },
-  {
-    "type": "</",
     "named": false
   },
   {
@@ -6684,10 +6423,6 @@
   },
   {
     "type": "hash_bang_line",
-    "named": true
-  },
-  {
-    "type": "html_character_reference",
     "named": true
   },
   {

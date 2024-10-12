@@ -1,15 +1,7 @@
 {
-  "0": "t",
-  "1": "y",
-  "2": "p",
-  "3": "e",
-  "4": "s",
-  "5": "c",
-  "6": "r",
-  "7": "i",
-  "8": "p",
-  "9": "t",
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/grammar.schema.json",
   "name": "qmljs",
+  "inherits": "typescript",
   "word": "identifier",
   "rules": {
     "program": {
