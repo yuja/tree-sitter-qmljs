@@ -175,6 +175,7 @@ module.exports = grammar(require('tree-sitter-typescript/typescript/grammar'), {
 
     ui_property_modifier: $ => choice(
       'default',
+      'final',
       'readonly',
       'required',
     ),

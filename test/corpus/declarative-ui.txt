@@ -371,6 +371,10 @@ MyItem {
     default property var defaultVarPropWithScriptStatement: 123
     default required property var defaultRequiredVarProp
 
+    final property var finalVarProp
+    final readonly property int finalReadonlyIntProp: 0
+    required final property int requiredFinalIntProp
+
     property QtObject objectPropWithDefinition: QtObject {}
     readonly property QtObject readonlyObjectPropWithDefinition: QtObject {}
 
@@ -433,6 +437,22 @@ MyItem {
         type: (type_identifier)
         name: (identifier))
       (ui_property
+        (ui_property_modifier)
+        type: (type_identifier)
+        name: (identifier)
+        value: (expression_statement
+          (number)))
+      (ui_property
+        (ui_property_modifier)
+        (ui_property_modifier)
+        type: (type_identifier)
+        name: (identifier))
+      (ui_property
+        (ui_property_modifier)
+        type: (type_identifier)
+        name: (identifier))
+      (ui_property
+        (ui_property_modifier)
         (ui_property_modifier)
         type: (type_identifier)
         name: (identifier)

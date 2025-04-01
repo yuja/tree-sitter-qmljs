@@ -11,6 +11,12 @@ Item {
     //              ^ property
     //                      ^ type
 
+    final property int someNumber: 123
+    // <- keyword
+    //    ^ keyword
+    //             ^ type
+    //                 ^ property  ^ number
+
     readonly property int someNumber: 123
     // <- keyword
     //       ^ keyword
