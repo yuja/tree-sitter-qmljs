@@ -196,7 +196,10 @@ module.exports = grammar(require('tree-sitter-typescript/typescript/grammar'), {
 
     ui_object_array: $ => seq(
       '[',
-      sep1($.ui_object_definition, ','),  // UiArrayMemberList
+      seq(
+        sep1($.ui_object_definition, ','),  // UiArrayMemberList
+        optional(','),
+      ),
       ']',
     ),
 

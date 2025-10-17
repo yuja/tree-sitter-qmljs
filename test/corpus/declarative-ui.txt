@@ -153,6 +153,11 @@ MyItem {
     arrayN: [member.expr, expr]
     objArray1: [Element {}]
     objArrayN: [Qualified.Element {}, Element {}]
+    objArray1Comma: [Element {},]
+    objArrayNComma: [
+        Qualified.Element {},
+        Element {},
+    ]
     object: Object {}
     qualifiedObject: Qualified.Object {}
 }
@@ -181,6 +186,23 @@ MyItem {
               object: (identifier)
               property: (property_identifier))
             (identifier))))
+      (ui_binding
+        name: (identifier)
+        value: (ui_object_array
+          (ui_object_definition
+            type_name: (identifier)
+            initializer: (ui_object_initializer))))
+      (ui_binding
+        name: (identifier)
+        value: (ui_object_array
+          (ui_object_definition
+            type_name: (nested_identifier
+              (identifier)
+              (identifier))
+            initializer: (ui_object_initializer))
+          (ui_object_definition
+            type_name: (identifier)
+            initializer: (ui_object_initializer))))
       (ui_binding
         name: (identifier)
         value: (ui_object_array
