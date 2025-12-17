@@ -176,8 +176,10 @@ module.exports = grammar(require('tree-sitter-typescript/typescript/grammar'), {
     ui_property_modifier: $ => choice(
       'default',
       'final',
+      'override',
       'readonly',
       'required',
+      'virtual',
     ),
 
     _ui_binding_value: $ => choice(
@@ -318,6 +320,8 @@ module.exports = grammar(require('tree-sitter-typescript/typescript/grammar'), {
       'on',
       'required',
       'component',
+      'final',
+      'virtual',
       // not QML keywords, but qmljs.g accepts them as JS expressions:
       'from',
       'of',
@@ -352,7 +356,7 @@ module.exports = grammar(require('tree-sitter-typescript/typescript/grammar'), {
       // 'new', ('new {}' would conflict at property value position)
       'readonly',
 
-      // QML (see QmlIdentifier):
+      // QML (see QMLContextualKeyword):
       'property',
       'signal',
       'readonly',
@@ -361,6 +365,8 @@ module.exports = grammar(require('tree-sitter-typescript/typescript/grammar'), {
       'of',
       'required',
       'component',
+      'final',
+      'virtual',
     ),
 
     // Patch up JavaScript string rules to support multi-line string literal.

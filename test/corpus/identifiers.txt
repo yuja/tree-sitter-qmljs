@@ -12,7 +12,7 @@ MyItem {
         property var async
         property var component
         property var declare
-        // property var final
+        property var final
         property var from
         property var get
         property var module
@@ -32,6 +32,7 @@ MyItem {
         property var symbol
         property var type
         property var unknown
+        property var virtual
         property var yield
     }
 
@@ -40,7 +41,7 @@ MyItem {
         required async
         required component
         required declare
-        // required final
+        required final
         required from
         required get
         required module
@@ -60,6 +61,7 @@ MyItem {
         required symbol
         required type
         required unknown
+        required virtual
         required yield
     }
 
@@ -68,7 +70,7 @@ MyItem {
         async: "foo"
         component: "foo"
         declare: "foo"
-        // final: "foo"
+        final: "foo"
         from: "foo"
         get: "foo"
         module: "foo"
@@ -88,6 +90,7 @@ MyItem {
         symbol: "foo"
         type: "foo"
         unknown: "foo"
+        virtual: "foo"
         yield: "foo"
     }
 
@@ -105,6 +108,7 @@ MyItem {
         signal symbol
         signal type
         signal unknown
+        signal virtual
         signal yield
     }
 
@@ -113,7 +117,7 @@ MyItem {
         function async() {}
         function component() {}
         function declare() {}
-        // function final() {}
+        function final() {}
         function from() {}
         function get() {}
         function module() {}
@@ -134,6 +138,7 @@ MyItem {
         function symbol() {}
         function type() {}
         function unknown() {}
+        function virtual() {}
         function yield() {}
     }
 }
@@ -166,7 +171,12 @@ MyItem {
           (ui_property
             type: (type_identifier)
             name: (identifier))
-          (comment)
+          (ui_property
+            type: (type_identifier)
+            name: (identifier))
+          (ui_property
+            type: (type_identifier)
+            name: (identifier))
           (ui_property
             type: (type_identifier)
             name: (identifier))
@@ -238,7 +248,10 @@ MyItem {
             name: (identifier))
           (ui_required
             name: (identifier))
-          (comment)
+          (ui_required
+            name: (identifier))
+          (ui_required
+            name: (identifier))
           (ui_required
             name: (identifier))
           (ui_required
@@ -302,7 +315,16 @@ MyItem {
             value: (expression_statement
               (string
                 (string_fragment))))
-          (comment)
+          (ui_binding
+            name: (identifier)
+            value: (expression_statement
+              (string
+                (string_fragment))))
+          (ui_binding
+            name: (identifier)
+            value: (expression_statement
+              (string
+                (string_fragment))))
           (ui_binding
             name: (identifier)
             value: (expression_statement
@@ -433,6 +455,8 @@ MyItem {
           (ui_signal
             name: (identifier))
           (ui_signal
+            name: (identifier))
+          (ui_signal
             name: (identifier))))
       (ui_object_definition
         type_name: (identifier)
@@ -453,7 +477,14 @@ MyItem {
             name: (identifier)
             parameters: (formal_parameters)
             body: (statement_block))
-          (comment)
+          (function_declaration
+            name: (identifier)
+            parameters: (formal_parameters)
+            body: (statement_block))
+          (function_declaration
+            name: (identifier)
+            parameters: (formal_parameters)
+            body: (statement_block))
           (function_declaration
             name: (identifier)
             parameters: (formal_parameters)
@@ -550,7 +581,7 @@ MyItem {
     QtObject { id: component }
     QtObject { id: declare }
     QtObject { id: false }
-    // QtObject { id: final }
+    QtObject { id: final }
     QtObject { id: from }
     QtObject { id: get }
     QtObject { id: module }
@@ -575,6 +606,7 @@ MyItem {
     QtObject { id: type }
     QtObject { objectName: undefined }
     QtObject { id: unknown }
+    QtObject { id: virtual }
     QtObject { id: yield }
 }
 
@@ -620,7 +652,13 @@ MyItem {
             (identifier)
             (expression_statement
               (false)))))
-      (comment)
+      (ui_object_definition
+        (identifier)
+        (ui_object_initializer
+          (ui_binding
+            (identifier)
+            (expression_statement
+              (identifier)))))
       (ui_object_definition
         (identifier)
         (ui_object_initializer
@@ -782,6 +820,13 @@ MyItem {
             (identifier)
             (expression_statement
               (undefined)))))
+      (ui_object_definition
+        (identifier)
+        (ui_object_initializer
+          (ui_binding
+            (identifier)
+            (expression_statement
+              (identifier)))))
       (ui_object_definition
         (identifier)
         (ui_object_initializer

@@ -53,9 +53,11 @@
   "final"
   "import"
   "on"
+  "override"
   "pragma"
   "property"
   "readonly"
   "required"
   "signal"
+  "virtual"
 ] @keyword
