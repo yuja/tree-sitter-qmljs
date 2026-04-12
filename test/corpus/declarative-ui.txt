@@ -396,6 +396,8 @@ MyItem {
     final property var finalVarProp
     final readonly property int finalReadonlyIntProp: 0
     required final property int requiredFinalIntProp
+    virtual property int virtualIntProp
+    override property int overrideIntProp
 
     property QtObject objectPropWithDefinition: QtObject {}
     readonly property QtObject readonlyObjectPropWithDefinition: QtObject {}
@@ -482,6 +484,14 @@ MyItem {
           (number)))
       (ui_property
         (ui_property_modifier)
+        (ui_property_modifier)
+        type: (type_identifier)
+        name: (identifier))
+      (ui_property
+        (ui_property_modifier)
+        type: (type_identifier)
+        name: (identifier))
+      (ui_property
         (ui_property_modifier)
         type: (type_identifier)
         name: (identifier))

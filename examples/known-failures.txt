@@ -17,6 +17,7 @@ qtdeclarative/tests/auto/qml/qqmllanguage/data/insertedSemicolon.1.qml
 qtdeclarative/tests/auto/qml/qqmllanguage/data/invalidQmlEnumValue.1.qml
 qtdeclarative/tests/auto/qml/qqmllanguage/data/invalidQmlEnumValue.2.qml
 qtdeclarative/tests/auto/qml/qqmllanguage/data/invalidRoot.1.qml
+qtdeclarative/tests/auto/qml/qqmllanguage/data/listIsNotAType.qml
 qtdeclarative/tests/auto/qml/qqmllanguage/data/missingObject.qml
 qtdeclarative/tests/auto/qml/qqmllanguage/data/nonexistantProperty.5.qml
 qtdeclarative/tests/auto/qml/qqmllanguage/data/property.2.qml
@@ -35,6 +36,14 @@ qtdeclarative/tests/auto/qmlls/utils/data/completions/imports.qml
 qtdeclarative/tests/auto/qmlls/utils/data/completions/missingRHS.parserfail.qml
 qtdeclarative/tests/auto/qmlls/utils/data/completions/missingRHS.qml
 qtdeclarative/tests/auto/qmlls/utils/data/emptyFile.qml
+qtdeclarative/tests/auto/qmlls/utils/data/highlights/invalid/highlightsShift_consoleLog_del.qml
+qtdeclarative/tests/auto/qmlls/utils/data/highlights/invalid/highlightsShift_del1.qml
+qtdeclarative/tests/auto/qmlls/utils/data/highlights/invalid/highlightsShift_del2.qml
+qtdeclarative/tests/auto/qmlls/utils/data/highlights/invalid/highlightsShift_del3.qml
+qtdeclarative/tests/auto/qmlls/utils/data/highlights/invalid/highlightsShift_del4.qml
+qtdeclarative/tests/auto/qmlls/utils/data/highlights/invalid/highlightsShift_del5.qml
+qtdeclarative/tests/auto/qmlls/utils/data/highlights/invalid/highlightsShift_del6.qml
+qtdeclarative/tests/auto/qmlls/utils/data/highlights/invalid/highlightsShift_withComments_del.qml
 qtdeclarative/tests/auto/qmlls/utils/data/qualifiedModule.qml
 qtdeclarative/tests/auto/qmlls/utils/data/renaming/UnrelatedFile.qml
 qtdeclarative/tests/auto/qtquickview/statuslistener/android/qml/Invalid.qml
