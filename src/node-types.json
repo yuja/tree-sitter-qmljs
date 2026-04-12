@@ -6672,6 +6672,10 @@
     "named": false
   },
   {
+    "type": "virtual",
+    "named": false
+  },
+  {
     "type": "void",
     "named": false
   },

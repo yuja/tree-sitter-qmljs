@@ -7258,6 +7258,14 @@
         },
         {
           "type": "STRING",
+          "value": "final"
+        },
+        {
+          "type": "STRING",
+          "value": "virtual"
+        },
+        {
+          "type": "STRING",
           "value": "from"
         },
         {
@@ -11711,11 +11719,19 @@
         },
         {
           "type": "STRING",
+          "value": "override"
+        },
+        {
+          "type": "STRING",
           "value": "readonly"
         },
         {
           "type": "STRING",
           "value": "required"
+        },
+        {
+          "type": "STRING",
+          "value": "virtual"
         }
       ]
     },
@@ -12421,6 +12437,14 @@
         {
           "type": "STRING",
           "value": "component"
+        },
+        {
+          "type": "STRING",
+          "value": "final"
+        },
+        {
+          "type": "STRING",
+          "value": "virtual"
         }
       ]
     }
