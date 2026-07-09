@@ -1,6 +1,6 @@
 /*
 Source:
-^0.23.2
+0.23.2
 
 The MIT License (MIT)
 
