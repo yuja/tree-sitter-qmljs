@@ -18,11 +18,11 @@ generate:
 src/typescript-scanner.h: \
  node_modules/tree-sitter-typescript/common/scanner.h \
  node_modules/tree-sitter-typescript/LICENSE \
- package.json
+ node_modules/tree-sitter-typescript/package.json
 	( \
 		echo '/*'; \
 		echo 'Source:'; \
-		$(JQ) -r '.devDependencies["tree-sitter-typescript"]' package.json; \
+		$(JQ) -r '.version' node_modules/tree-sitter-typescript/package.json; \
 		echo; \
 		cat node_modules/tree-sitter-typescript/LICENSE; \
 		echo '*/'; \
