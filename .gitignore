@@ -4,8 +4,12 @@
 .#*
 \#*#
 
+*.egg-info
+*.whl
+
 /Cargo.lock
 /build/
+/dist/
 /examples/qtdeclarative
 /node_modules/
 /target/
