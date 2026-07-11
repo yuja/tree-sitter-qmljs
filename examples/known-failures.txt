@@ -32,6 +32,7 @@ qtdeclarative/tests/auto/qmlls/utils/data/completions/afterDots.qml
 qtdeclarative/tests/auto/qmlls/utils/data/completions/attachedPropertyMissingRHS.qml
 qtdeclarative/tests/auto/qmlls/utils/data/completions/attachedPropertyQTBUG127586.qml
 qtdeclarative/tests/auto/qmlls/utils/data/completions/groupedPropertyMissingRHS.qml
+qtdeclarative/tests/auto/qmlls/utils/data/completions/idMethodMixup.qml
 qtdeclarative/tests/auto/qmlls/utils/data/completions/imports.qml
 qtdeclarative/tests/auto/qmlls/utils/data/completions/missingRHS.parserfail.qml
 qtdeclarative/tests/auto/qmlls/utils/data/completions/missingRHS.qml

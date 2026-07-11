@@ -1,6 +1,6 @@
 GIT = git
 GIT_LOG_FLAGS = -p --reverse
-QTDECLARATIVE_GIT_ID = e56bc1351c4ef308dad1da0b105493bef9ffd148
+QTDECLARATIVE_GIT_ID = 33f70416ebc6e22321786d222a1b48cac70bb4e9
 
 .PHONY: all
 all: qtdeclarative
