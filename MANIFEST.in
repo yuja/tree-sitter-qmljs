@@ -1,0 +1,3 @@
+include queries/*.scm
+include src/tree_sitter/*.h
+include src/typescript-scanner.h
